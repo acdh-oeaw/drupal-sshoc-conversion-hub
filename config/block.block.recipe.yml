@@ -1,0 +1,28 @@
+uuid: 547ab2a7-73e3-472a-ac10-b90d555e96dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.is_a_recipe
+  module:
+    - facets
+    - system
+  theme:
+    - bootstrap_conversionhub
+id: recipe
+theme: bootstrap_conversionhub
+region: sidebar_first
+weight: -4
+provider: null
+plugin: 'facet_block:is_a_recipe'
+settings:
+  id: 'facet_block:is_a_recipe'
+  label: Recipe
+  label_display: '0'
+  provider: facets
+  block_id: recipe
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/search\r\n<front>"

@@ -1,47 +1,49 @@
-uuid: 6ecf52f5-0b40-4c26-a963-17db7103e7a5
+uuid: 57e31f28-0305-435a-a104-e640d68f9b26
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.user.user.user_picture
-    - image.style.thumbnail
   module:
-    - image
+    - path
     - user
 _core:
-  default_config_hash: jLkMFqpbSJphJv4MfuLl3wbZ8EBl-5mcjak0erRZ5U0
+  default_config_hash: K-1rBM8mTIkFp9RqOC2tMRUukOQ1xbRCfSKK8dEddnA
 id: user.user.default
 targetEntityType: user
 bundle: user
 mode: default
 content:
   account:
-    weight: -10
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  contact:
-    weight: 5
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  language:
     weight: 0
     region: content
     settings: {  }
     third_party_settings: {  }
-  timezone:
-    weight: 6
+  contact:
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
-  user_picture:
-    type: image_image
-    weight: -1
+  language:
+    weight: 1
     region: content
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+    settings: {  }
+    third_party_settings: {  }
+  matomo:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  timezone:
+    weight: 4
+    region: content
+    settings: {  }
     third_party_settings: {  }
 hidden:
-  langcode: true
+  user_picture: true

@@ -1,0 +1,46 @@
+uuid: 9280dfd4-8974-4c7a-8d20-fb51a4af07b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.formats.field_media_type
+    - taxonomy.vocabulary.formats
+  module:
+    - field_group
+    - text
+third_party_settings:
+  field_group:
+    group_media_type:
+      children:
+        - field_media_type
+      label: 'Media type'
+      parent_name: ''
+      region: content
+      weight: 1
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        id: ''
+        description: ''
+id: taxonomy_term.formats.default
+targetEntityType: taxonomy_term
+bundle: formats
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_media_type:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  search_api_excerpt: true

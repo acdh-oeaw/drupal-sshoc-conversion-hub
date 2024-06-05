@@ -1,0 +1,28 @@
+uuid: 09cc1b45-4e22-4dcd-9928-4b55650c79db
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.expected_level_of_knowledge_taxonomy_term_name
+  module:
+    - facets
+    - system
+  theme:
+    - bootstrap_conversionhub
+id: expectedlevelofknowledge
+theme: bootstrap_conversionhub
+region: sidebar_first
+weight: -12
+provider: null
+plugin: 'facet_block:expected_level_of_knowledge_taxonomy_term_name'
+settings:
+  id: 'facet_block:expected_level_of_knowledge_taxonomy_term_name'
+  label: 'Expected Level of Knowledge'
+  label_display: '0'
+  provider: facets
+  block_id: expectedlevelofknowledge
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/search\r\n<front>"

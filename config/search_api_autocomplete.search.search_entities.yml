@@ -1,0 +1,38 @@
+uuid: 55772057-b4fb-4f8c-9a7d-3c5b57d33db5
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.index.solution_entities
+    - views.view.search_entities
+    - core.entity_view_mode.node.autocomplete_preview
+  module:
+    - views
+    - search_api_autocomplete
+id: search_entities
+label: 'Search entities'
+index_id: solution_entities
+suggester_settings:
+  live_results:
+    fields: {  }
+    highlight:
+      enabled: false
+      field: ''
+    view_modes:
+      'entity:node':
+        solution: autocomplete_preview
+suggester_weights:
+  live_results: 0
+suggester_limits: {  }
+search_settings:
+  'views:search_entities':
+    displays:
+      default: true
+      selected: {  }
+options:
+  limit: 10
+  min_length: 1
+  show_count: false
+  delay: null
+  submit_button_selector: ':submit'
+  autosubmit: true

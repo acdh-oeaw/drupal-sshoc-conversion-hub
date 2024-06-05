@@ -1,0 +1,8 @@
+uuid: 05835173-a717-4695-926f-e58ca7196dcf
+langcode: en
+status: true
+dependencies: {  }
+name: 'Invocation types'
+vid: invocation_types
+description: ''
+weight: 0

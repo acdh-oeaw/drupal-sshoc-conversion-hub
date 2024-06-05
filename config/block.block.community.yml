@@ -1,0 +1,28 @@
+uuid: 863024d0-2f1a-454f-a359-b5280b5495e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.community_taxonomy_term_name
+  module:
+    - facets
+    - system
+  theme:
+    - bootstrap_conversionhub
+id: community
+theme: bootstrap_conversionhub
+region: sidebar_first
+weight: -11
+provider: null
+plugin: 'facet_block:community_taxonomy_term_name'
+settings:
+  id: 'facet_block:community_taxonomy_term_name'
+  label: Community
+  label_display: '0'
+  provider: facets
+  block_id: community
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/search\r\n<front>"

@@ -1,0 +1,21 @@
+uuid: 7fd3c960-b626-44e1-a64e-d4dca14298d4
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_license_text
+field_name: field_license_text
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

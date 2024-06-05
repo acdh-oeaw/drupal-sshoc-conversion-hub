@@ -1,0 +1,28 @@
+uuid: a0901caf-1c07-4583-a1cf-1c79a53da119
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.invocation_type_taxonomy_term_name
+  module:
+    - facets
+    - system
+  theme:
+    - bootstrap_conversionhub
+id: invocationtype
+theme: bootstrap_conversionhub
+region: sidebar_first
+weight: -8
+provider: null
+plugin: 'facet_block:invocation_type_taxonomy_term_name'
+settings:
+  id: 'facet_block:invocation_type_taxonomy_term_name'
+  label: 'Invocation type'
+  label_display: '0'
+  provider: facets
+  block_id: invocationtype
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/search\r\n<front>"

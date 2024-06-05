@@ -1,0 +1,28 @@
+uuid: 8ed6bcda-4449-4b8e-baac-a5a9c75e3aaa
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.output_format_taxonomy_term_name
+  module:
+    - facets
+    - system
+  theme:
+    - bootstrap_conversionhub
+id: outputformat
+theme: bootstrap_conversionhub
+region: sidebar_first
+weight: -9
+provider: null
+plugin: 'facet_block:output_format_taxonomy_term_name'
+settings:
+  id: 'facet_block:output_format_taxonomy_term_name'
+  label: 'Output format'
+  label_display: '0'
+  provider: facets
+  block_id: outputformat
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/search\r\n<front>"

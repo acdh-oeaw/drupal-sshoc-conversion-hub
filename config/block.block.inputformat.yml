@@ -1,0 +1,28 @@
+uuid: 14a126d6-9e4a-47ac-8c88-50940ef3b620
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.input_format_taxonomy_term_name
+  module:
+    - facets
+    - system
+  theme:
+    - bootstrap_conversionhub
+id: inputformat
+theme: bootstrap_conversionhub
+region: sidebar_first
+weight: -10
+provider: null
+plugin: 'facet_block:input_format_taxonomy_term_name'
+settings:
+  id: 'facet_block:input_format_taxonomy_term_name'
+  label: 'Input format'
+  label_display: '0'
+  provider: facets
+  block_id: inputformat
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/search\r\n<front>"
