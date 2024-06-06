@@ -7,5 +7,5 @@ workflow
 * set the secrets in the production environment
 * adapt the starter.yaml and change the APP_name
 * push and deploy
-* create a persistend storage for the files (todo: add it to the values.yaml of the autodeply)
+* create a persistent storage for the files (todo: add it to the values.yaml of the autodeply)
 * chown the files to www-data
