@@ -36,7 +36,7 @@
 	"drupal/search_api_autocomplete": "^1.8",
 	"drupal/smtp": "^1.2",
 	"drupal/taxonomy_manager": "^2.0",
-        "drush/drush": "^11.4"
+        "drush/drush": "^12.4"
     },
     "conflict": {
         "drupal/drupal": "*"
